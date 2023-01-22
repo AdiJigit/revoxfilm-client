@@ -14,7 +14,7 @@ export default function Home({ type }) {
     const getRandomList = async () => {
       try {
         const res = await axios.get(
-          `api/lists${type ? '?type=' + type : ''}${
+          "https://revoxfilm-api.onrender.com/api/"+`lists${type ? '?type=' + type : ''}${
             genre ? '&genre=' + genre : ''
           }`,
           {
