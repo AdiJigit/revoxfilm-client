@@ -40,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://revoxfilm-api/api/"
+  "proxy": "https://revoxfilm-api.onrender.com/api/"
 }
