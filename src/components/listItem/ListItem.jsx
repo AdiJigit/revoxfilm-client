@@ -12,8 +12,6 @@ export default function ListItem({ index, item }) {
   const [isHovered, setIsHovered] = useState(false);
   const [movie, setMovie] = useState({});
 
-  console.log(item);
-
   useEffect(() => {
     const getMovie = async () => {
       try {
@@ -22,7 +20,8 @@ export default function ListItem({ index, item }) {
           {
             headers: {
               token:
-                'Bearer ' + JSON.parse(localStorage.getItem('user')).accessToken,
+                'Bearer ' +
+                JSON.parse(localStorage.getItem('user')).accessToken,
             },
           }
         );

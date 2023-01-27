@@ -23,7 +23,6 @@ export default function List({ list }) {
     }
   };
 
-  console.log(list)
   
   return (
     <div className="list">
