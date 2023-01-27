@@ -20,7 +20,7 @@ export default function Home({ type }) {
           {
             headers: {
               token:
-                'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYzE0ODMzNzBhNjEyMDdmNzMxMTZiZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY3NDIxOTgwOCwiZXhwIjoxNjc0NjUxODA4fQ.uNmhfOyNwVF7rKTg6SiS8_7hsWrozE_fsCMfKpQjpaM',
+                'Bearer ' + JSON.parse(localStorage.getItem('user')).accessToken,
             },
           }
         );
@@ -31,7 +31,6 @@ export default function Home({ type }) {
     };
     getRandomList();
   }, [genre, type]);
-  console.log(lists);
 
 
   return (
